@@ -133,7 +133,7 @@ def Make_PicXML_2(sample_filename , save_pic_filename , save_xml_filename , aug_
         place_y=random.randint(1,int(size_y - y))
     
         #画像の生成
-        img=np.zeros((size_y,size_x,3))
+        img=np.zeros((size_y,size_x,3),dtype=np.uint8)
         img=cv.rectangle(img,(0,0),(size_x,size_y),(0,128,0),cv.FILLED)
         
         for num in range(NUMBER):
